@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800&family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;0,600;0,800;0,900;1,700&family=Rubik+Burned&display=swap');
+
+ :root{
+  --font-base: 'kanit', sans-serif;
+  --font-alt: 'Poppins', sans-serif;
+  --font-design: 'Rubik Burned', system-ui;
+
+  --color-bg: #05132a;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-design: #633AAB;
+  --color-footer: rgba(38, 39, 72, 0.6);
+ }
+
+ .dark-mode{
+  --color-bg: #ffffff;
+  --color-black: #ffffff;
+  --color-white: #000000;
+  --color-design: #633AAB;
+  --color-footer: rgba(38, 39, 72, 0.6);
+ }

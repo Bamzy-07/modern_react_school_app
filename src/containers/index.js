@@ -1,0 +1,13 @@
+export {default as Header} from './header/Header';
+export {default as Brand} from './brand/Brand';
+export {default as Banner} from './banner/Banner';
+export {default as Hero} from './hero/Hero';
+export {default as Courses} from './courses/Courses';
+export {default as Gallery} from './gallery/Gallery';
+export {default as Review} from './review/Review';
+export {default as Cta} from './cta/Cta';
+export {default as Blog} from './blog/Blog';
+export {default as Footer} from './footer/Footer';
+export {default as AboutUs} from './aboutUs/AboutUs';
+export {default as Proprietress} from './proprietress/Proprietress';
+export {default as Parents} from './parents/Parents';

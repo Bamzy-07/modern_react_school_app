@@ -1,0 +1,28 @@
+.cards{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+.cards__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.cards__header p{
+    color: var(--color-design);
+    font-size: 20px;
+    margin-right: 2rem;
+}
+
+.cards__header h1{
+    font-family: var(--font-base);
+    font-weight:600;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: -0.04em;
+    color: var(--color-white);
+}
+.cards__content p{
+    text-align: justify;
+}

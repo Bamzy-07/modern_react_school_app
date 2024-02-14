@@ -1,0 +1,37 @@
+.credits{
+    min-width:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:1rem;
+    border: 2px solid var(--color-design);
+    border-radius: 25px;
+    background: rgba(78, 67, 99, 0.5);
+    transition: 0.5s ease-in-out;
+}
+.credits:hover{
+    box-shadow: 3px 3px 5px #5a566c;
+    transform: translateY(-20px);
+}
+
+.credits h1{
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 50px;
+    letter-spacing: 0.14em;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+.credits span{
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-size: 55px;
+    color: var(--color-design);
+}
+
+.credits p{
+    font-size: 20px;
+    margin-top: 1rem;
+}

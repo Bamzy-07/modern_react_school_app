@@ -1,0 +1,7 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+}
+.profile .review button{
+    display: none;
+}

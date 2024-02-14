@@ -1,0 +1,44 @@
+.banner{
+    background-color: rgb(73, 67, 85);
+    background-image: url('../../assets/contact_02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding: 100px 0;
+}
+
+.banner__header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner__header h1{
+    font-family: var(--font-base);
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 65px;
+    letter-spacing: 0.14em;
+    color: var(--color-white);
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width:840px){
+    .banner__header{
+        margin:0 2rem;
+    }
+    .banner__header h1{
+        font-size: 45px;
+    }
+    .banner__header p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:650px){
+    .banner__header h1{
+        font-size: 35px;
+    }
+    .banner__header p{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,47 @@
+
+.images .banner{
+    background-image: url('../../assets/contact_01.jpg');
+}
+
+.images__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 100%;
+}
+
+.media-pic{
+    max-height: 300px;
+    max-width: 400px;
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.media-pic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.media-pic img:hover{
+    transform:scale(1.1);
+}
+
+@media screen and (max-width:1300px){
+    .images__container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:900px){
+    .images__container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width:600px){
+    .images__container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
