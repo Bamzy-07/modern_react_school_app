@@ -14,7 +14,7 @@ const Gallery = () => {
         </div>
         <div className='gallery__imageSlider snaps-inline'>
             {Images.map((image, index) => (
-                <div className='media-element' key={'galleryimage-index'}>
+                <div className='media-element' key={index}>
                 <img src={image} alt='gallery-image' />
                 <BsInstagram className='media__insta' />
             </div> 

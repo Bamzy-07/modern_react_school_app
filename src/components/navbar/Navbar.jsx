@@ -1,11 +1,13 @@
 import {React, useState} from 'react';
 import './navbar.css';
+import {NavLink} from 'react-router-dom';
 
 import { RiMenu2Line, RiMenu3Line } from "react-icons/ri";
 
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
   return (
     <div className='navbar'>
       <div className='navbar__logo'>
@@ -13,9 +15,9 @@ const Navbar = () => {
       </div>
       
      <ul className='navbar__links'>
-       <li><a className='p__poppins active' href='/'>Home</a></li>
-       <li><a className='p__poppins' href='/profile'>Profile</a></li>
-       <li><a className='p__poppins' href='/gallery'>Gallery</a></li>
+       <li><NavLink className='p__poppins' activeClassName='active' exact to='/' >Home</NavLink></li>
+       <li><NavLink className='p__poppins' activeClassName='active' exact to='/profile' >Profile</NavLink></li>
+       <li><NavLink className='p__poppins' activeClassName='active' exact to='/gallery' >Gallery</NavLink></li>
        <a href='/JoinUs'>
         <button>Join Us</button>
        </a>
@@ -29,9 +31,9 @@ const Navbar = () => {
     {
       toggleMenu &&(
         <div className="navbar__menu-links">
-          <li ><a className='p__poppins' href='/'>Home</a></li>
-          <li><a className='p__poppins' href='/profile'>Profile</a></li>
-          <li><a className='p__poppins' href='/gallery'>Gallery</a></li>
+          <li><NavLink className='p__poppins' activeClassName='active-link' exact to='/' >Home</NavLink></li>
+          <li><NavLink className='p__poppins' activeClassName='active-link' exact to='/profile' >Profile</NavLink></li>
+          <li><NavLink className='p__poppins' activeClassName='active-link' exact to='/gallery' >Gallery</NavLink></li>
           <a  href='/JoinUs'>
           <button className='nav__btn'>Join Us</button>
           </a>

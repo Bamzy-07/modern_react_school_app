@@ -13,7 +13,7 @@ const Images = () => {
           A Raw Showcase of Young Talent.' />
       <div className='images__container section__padding'>
           {Pics.map((pic, index) => (
-                <div className='media-pic' key={'galleryimage-index'}>
+                <div className='media-pic' key={index}>
                 <img src={pic} alt='gallery-image' />
             </div> 
             ))}
